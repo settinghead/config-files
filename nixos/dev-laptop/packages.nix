@@ -2,18 +2,18 @@
 {
 
   environment.systemPackages = with pkgs; [
-     gitAndTools.gitFull git-cola tig gnupg gnupg1compat
-     zip unzip file google-drive-ocamlfuse
-     gcc gnumake nasm autoconf automake zlib
-     curl wget chromium firefox torbrowser google-chrome firefoxWrapper
+     gitAndTools.gitFull git-cola gnupg gnupg1compat
+     zip unzip file gparted exfat
+     gcc gnumake nasm autoconf automake zlib dpkg
+     curl wget chromium firefox torbrowser
     boot leiningen
-     nodejs phantomjs
-     fcitx fcitx-configtool
-     atom idea.idea-community jdk clojure
+     nodejs phantomjs electron
+     gparted
+     idea.idea-community jdk clojure idea.webstorm
      zsh python python3 pypy bash terminator
      skype vlc
-     wine winetricks
      gimp goldendict optipng vagrant
+     audacity lame
   ];
 
 

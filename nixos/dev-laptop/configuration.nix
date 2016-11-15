@@ -17,14 +17,20 @@
   boot.loader.grub.device = "/dev/sda";
   boot.loader.timeout = 1;
   networking.hostName = "settinghead-nix"; # Define your hostname.
-
+  networking.firewall.enable = true;
   networking.firewall.allowPing = true;
   # for chromecast
   networking.firewall.allowedUDPPortRanges = [{ from = 32768; to =
 61000; }];
+  networking.firewall.allowedTCPPorts = [80 3000 8000 8080 8008 ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;
+#networking.extraHosts =
+#  ''
+#    103.245.222.162 registry.npmjs.com
+#    192.30.253.112 github.com
+#  '';
 
   # Select internationalisation properties.
   # i18n = {

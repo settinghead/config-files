@@ -56,8 +56,8 @@
   # services.xserver.displayManager.kdm.enable = true;
   # services.xserver.desktopManager.kde4.enable = true;
   # services.xserver.desktopManager.gnome3.enable = true;
-  services.xserver.desktopManager.kde5.enable = true;
-  # services.xserver.desktopManager.xfce.enable = true;
+  # services.xserver.desktopManager.kde5.enable = true;
+  services.xserver.desktopManager.xfce.enable = true;
   programs.zsh.enable = true;
 
 

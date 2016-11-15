@@ -26,11 +26,11 @@
      enableAdobeFlash = true;
     };
 
-    chromium = {
-     enablePepperFlash = true; # Chromium's non-NSAPI alternative to Adobe Flash
-     enablePepperPDF = true;
-     enableWideVine = true;
-    };
+    #chromium = {
+    # enablePepperFlash = true; # Chromium's non-NSAPI alternative to Adobe Flash
+    # enablePepperPDF = true;
+    # enableWideVine = true;
+    #};
   };
 
   virtualisation.virtualbox.host.enable = true;
